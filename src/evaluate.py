@@ -8,7 +8,8 @@ X_test = np.load("data/processed/X_test.npy")
 y_test = np.load("data/processed/y_test.npy")
 
 # Load trained model
-model = tf.keras.models.load_model("models/model_v1.keras")
+model = tf.keras.models.load_model("models/model_v2_weighted.keras")
+
 
 # Predict probabilities  -> class indices
 y_prob = model.predict(X_test, verbose=0)
